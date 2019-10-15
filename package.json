@@ -1,0 +1,33 @@
+{
+  "name": "tiny-s3",
+  "version": "0.0.1",
+  "description": "Minimalistic Amazon S3 client with Promise support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ks-s-a/tiny-s3.git"
+  },
+  "keywords": [
+    "s3",
+    "promise",
+    "aws",
+    "system simple storage",
+    "amazon",
+    "amazon s3",
+    "bucket",
+    "tiny"
+  ],
+  "author": "Sergei Ksenofontov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ks-s-a/tiny-s3/issues"
+  },
+  "homepage": "https://github.com/ks-s-a/tiny-s3#readme",
+  "dependencies": {
+    "aws-sdk": "^2.549.0",
+    "bluebird": "^3.7.1"
+  }
+}
