@@ -14,7 +14,7 @@ const s3 = new S3({
 });
 
 // Delete bucket by key
-await s3.deleteBucket('my-small-bcket');
+await s3.deleteBucket('my-small-bucket');
 
 // Create bucket with name 'my-small-bucket'
 await s3.createBucket('my-small-bucket');
