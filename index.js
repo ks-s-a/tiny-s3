@@ -22,24 +22,24 @@ module.exports = class S3 {
     this.client = Promise.promisifyAll(new AWS.S3(params), { context: this.client, suffix: 'Fxd' });
   }
 
-  get (key) {
+  get (key, bucket) {
     return this.client.getObjectFxd({
-      Bucket: 'kairion-sanity-check-reports',
+      Bucket: bucket,
       Key: key
     });
   }
 
-  put (key, value) {
+  put (key, value, bucket) {
     return this.client.putObjectFxd({
       Body: value,
-      Bucket: 'kairion-sanity-check-reports',
+      Bucket: bucket,
       Key: key
     });
   }
 
-  delete (key) {
+  delete (key, bucket) {
     return this.client.deleteObjectFxd({
-      Bucket: 'kairion-sanity-check-reports',
+      Bucket: bucket,
       Key: key
     });
   }

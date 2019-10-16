@@ -1,6 +1,6 @@
 {
   "name": "tiny-s3",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minimalistic Amazon S3 client with Promise support",
   "main": "index.js",
   "scripts": {

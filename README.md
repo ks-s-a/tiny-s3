@@ -20,11 +20,11 @@ await s3.deleteBucket('my-small-bucket');
 await s3.createBucket('my-small-bucket');
 
 // Put 'somewhat' as new object into s3
-await s3.put('my-little-key', 'somewhat');
+await s3.put('my-little-key', 'somewhat', 'my-small-bucket');
 
 // Get object by key
-await s3.get('my-little-key');
+await s3.get('my-little-key', 'my-small-bucket');
 
 // Delete object by key
-await s3.delete('my-little-key');
+await s3.delete('my-little-key', 'my-small-bucket');
 ```
